@@ -1,0 +1,170 @@
+/* General */
+* {
+  background-color: #000000;
+  color: #66b933;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-top: 10vh;
+  padding: 10px;
+  background: #000000;
+  width: auto;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+h2 {
+  margin: 2%;
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+/* Game */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
+}
+
+.time-and-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.timer .points {
+  align-self: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  box-sizing: border-box;
+}
+
+.game > div {
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.cards {
+  width: 70%;
+  height: 50vh;
+  border: 1px dotted #66b933;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  height: 70%;
+}
+.cards td {
+  text-align: center;
+  border: 1px solid #66b933;
+  border-radius: 5px;
+  width: 33%;
+}
+
+.categories {
+  width: 30%;
+  min-height: 50vh;
+  border: 1px dotted #66b933;
+}
+
+.categories ul {
+  padding: 10px;
+}
+
+input[type='text'] {
+  width: 70%;
+  height: 2em;
+  padding: 2px;
+  font-size: 1.1em;
+}
+input[type='submit'] {
+  height: 2em;
+  padding: 7px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+/* Instructions */
+
+.instructions {
+  width: 45%;
+  border: 1px dotted #66b933;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rules {
+  margin-left: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Next button */
+
+.next-btn {
+  padding: 5px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+/* Game over */
+
+.game-over {
+  display: none;
+  position: fixed;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border: 1px solid #66b933;
+  border-radius: 5px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.game-over > img {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 100px;
+}
+
+#reload {
+  margin: 20px;
+}

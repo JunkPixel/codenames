@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codenamez</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Codenamez</h1>
+    </div>
+    <div class="instructions">
+      <h2 class="instructions-title">Instructions</h2>
+      <ol class="rules">
+          <li>Press start to reveal the words on the cards and to start the timer.</li>
+          <li>Enter categories that match as many words as possible into the input box on the right.</li>
+          <li>If a category matches more than one word, you get one point per matched word (e.g. 2 words = 2 points, 3 words = 3 points).</li>
+          <li>If you get stuck, click "Next" to switch to a new set of cards.</li>
+          <li>The game is finished once time is up.</li>
+      </ol>
+      <p>Hint: Categories are always one word, singular.</p> <span id="hide-instructions" class="hidden">Click this box to view/hide the instructions.</span>
+    </div>
+    <div class="content">
+        <div class="time-and-points">
+            <div class="timer">
+                <h3>Time: <span id="minutes"></span>:<span id="seconds"></span></h3>
+            </div>
+            <div class="start"><button class="start-btn">START</button></div><div><button class="next-btn hidden">NEXT</button></div>
+            <div class="points">
+                <h3>Points: <span id="point-amount">0</span></h3>               
+            </div>
+        </div>
+      <div class="game">
+        <div class="cards">
+          <h2>Cards</h2>
+          <table>
+            <tr>
+              <td class="word word1">)(#€")U</td>
+              <td class="word word2">"€(/#"€""</td>
+              <td class="word word3">%#€"?#=</td>
+            </tr>
+            <tr>
+              <td class="word word4">€#/)(#"€</td>
+              <td class="word word5">!"=(€#</td>
+              <td class="word word6">%#/(€/"</td>
+            </tr>
+            <tr>
+              <td class="word word7">%#)(%€</td>
+              <td class="word word8">#%)(€</td>
+              <td class="word word9">!"=)€#(/</td>
+            </tr>
+          </table>
+        </div>
+        <div class="categories">
+          <h2>Categories</h2>
+          <div class="form">
+          <form class="category-input" action="#">
+              <input type="text" name="category" placeholder="Enter category" id="guess" autocomplete="off"><input type="submit" value="GO">
+            </div>
+              <p class="category"><ul id="categories-correct">
+                
+            </ul></p>
+              
+          </form>
+
+          <canvas class= "canvas" width="150" height="150"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="game-over">
+      TIME'S UP!<br>
+      Points: <span id="points-at-end">0</span><br>
+      Your best: <span id="high-score">0</span><br>
+      <button id="reload">New game</button><br>
+      <span class="final-gif"><img  src="images/win-1.gif" ></span>
+    </div>
+    <!-- <div class="footer"></div> -->
+   
+   
+    <script src="src/script.js"></script>
+    <script src="src/buttons.js"></script>
+    <script src="src/words.js"></script>
+    <script src="src/timer.js"></script>
+  </body>
+</html>
+
+
