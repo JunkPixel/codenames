@@ -50,7 +50,6 @@ let currentCards = [];
 const $canvas = document.querySelector('canvas');
 const canvas = new Canvas($canvas);
 
-
 // choose a random card
 
 function generateRandomCard() {
@@ -114,15 +113,16 @@ function guessCategory(e) {
       correctCategory.appendChild(
         document.createTextNode(newGuess + ' / ' + categoryCounter + ' points')
       );
-        
+      console.log('C', categoryCounter);
+      totalPoints += categoryCounter;
+      console.log('T', totalPoints);
       currentCategories.push(newGuess);
 
       $categoriesCorrect.appendChild(correctCategory);
-
-      totalPoints += categoryCounter;
-     
-      $categoryInput.reset();
+      canvas.hidden = false;
       canvas.loop();
+
+      $categoryInput.reset();
     }
 
     $points.innerText = totalPoints;
