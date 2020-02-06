@@ -3,7 +3,7 @@ let $stopButton = document.getElementsByClassName('.stop-btn');
 
 let startCounter = 0;
 //Audio
-let tension = new Audio('./audio/tension.mp3');
+let tension = new Audio('./audio/countdown.mp3');
 
 let colorTimeout = '';
 $startButton.addEventListener('click', function() {
