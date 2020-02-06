@@ -29,7 +29,7 @@ class Canvas {
     console.log('Hello World');
     if (this.hidden === false) {
       let color = 'hsl(' + Math.abs(this.hue) + ',100%,50%)';
-      this.audio.play();
+
       this.ctx.fillStyle = color;
 
       this.ctx.font = '40px serif';
