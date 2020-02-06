@@ -41,7 +41,7 @@ class Canvas {
 
         this.ctx.fillStyle = color;
         this.clear();
-      }, 3000);
+      }, 2000);
     } else {
     }
   }
