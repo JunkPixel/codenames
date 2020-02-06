@@ -106,6 +106,7 @@ function guessCategory(e) {
           $cardSlot[i].style.backgroundColor = 'black';
           $cardSlot[i].style.color = '#66b933';
         }, 1000);
+        $categoryInput.reset();
       }
     }
 
