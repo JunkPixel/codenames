@@ -14,7 +14,6 @@ $startButton.addEventListener('click', function() {
     addRandomCards();
     startCounter++;
 
-    $rules.classList.toggle('hidden');
     document.querySelector('#hide-instructions').classList.toggle('hidden');
 
     document.querySelector('.next-btn').classList.toggle('hidden');
